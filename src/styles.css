@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+.loader {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.datagrid {
+    margin-top: 0px;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.half-margin-top {
+    margin-top: 12px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pallete-1 {
+    color: #0065AB !important;
+}
+
+.pallete-2 {
+    color: #798893 !important;
+}
+
+.pallete-3 {
+    color: #25333D !important;
+}
+
+.pallete-4 {
+    color: #C1CDD4 !important;
+}
+
+.clr-treenode-content {
+    padding: 12px;
+    margin-bottom: 6px;
+    border: 1px solid rgb(204, 204, 204);;
+}
+.clr-treenode-content:first-child {
+    padding-left: 12px;
+    margin-left: 30px;
+}
+
+.clr-treenode-link {
+    margin-left: 12px;
+}
+
+.content-area {
+    padding-bottom: 0 !important;
+}
+
+body {
+    background-color: #fafafa;
+}

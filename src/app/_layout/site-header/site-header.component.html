@@ -1,0 +1,29 @@
+<clr-header>
+    <div class="branding">
+        <a href="#" class="nav-link">
+            <span class="clr-icon clr-clarity-logo"></span>
+            <span class="title">Jobo</span>
+        </a>
+    </div>
+    <header-search *ngIf="hideSearch()"></header-search>
+    <div class="header-actions">
+        <a href="javascript://" *ngIf="hidePostBtn()" class="nav-link nav-text">
+            <span class="text-warning">&#43; Post a vacancy</span>
+        </a>
+        <a href="javascript://" class="nav-link nav-icon">
+            <clr-icon shape="bell"></clr-icon>
+        </a>
+        <clr-dropdown>
+            <button class="nav-text" clrDropdownTrigger>
+                Sergey V. Kolesnikov
+                <clr-icon shape="caret down"></clr-icon>
+            </button>
+            <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+                <a href="..." clrDropdownItem>Help</a>
+                <a href="..." clrDropdownItem>Profile</a>
+                <a href="..." clrDropdownItem>Log out</a>
+            </clr-dropdown-menu>
+        </clr-dropdown>
+    </div>
+</clr-header>
+<sub-nav *ngIf="hideSubnav()"></sub-nav>

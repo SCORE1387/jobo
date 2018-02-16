@@ -1,0 +1,195 @@
+<h2 class="no-margin-top">Search for a vacancy</h2>
+
+<form>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="email" class="form-control input-search" style="width: 100%" id="search_query"
+                   name="search_query"
+                   placeholder="Search query">
+        </div>
+        <div class="col-md-2">
+            <input type="email" class="form-control input-search" style="width: 100%" id="project_name"
+                   name="project_name"
+                   placeholder="Project name">
+        </div>
+        <div class="col-md-2">
+            <input type="email" class="form-control input-search" style="width: 100%" id="city" name="city"
+                   placeholder="City or region">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <select id="specialization" class="input-search" style="width: 100%; margin-top: 12px" required
+                    title="Specialization">
+                <option value="" disabled selected>Specialization</option>
+                <option value="dev">Development</option>
+                <option value="ba">Business analysis</option>
+                <option value="sa">System analysis</option>
+                <option value="qa">Quality Assurance</option>
+                <option value="pm">Project Management</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <select id="assignment" class="input-search" style="width: 100%; margin-top: 12px" required
+                    title="Assignment duration">
+                <option value="" disabled selected>Assignment duration</option>
+                <option value="dev">< 1 month</option>
+                <option value="ba">1-3 months</option>
+                <option value="sa">3-6 months</option>
+                <option value="qa">6-12 months</option>
+                <option value="pm">> 1 year</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <select id="experience" class="input-search" style="width: 100%; margin-top: 12px" required
+                    title="Required experience">
+                <option value="" disabled selected>Required experience</option>
+                <option value="dev">Newcomer</option>
+                <option value="ba">> 1 year</option>
+                <option value="sa">> 3 year</option>
+                <option value="qa">> 5 year</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <select id="project_size" class="input-search" style="width: 100%; margin-top: 12px" required
+                    title="Project Size">
+                <option value="" disabled selected>Project Size</option>
+                <option value="dev">< 5 people</option>
+                <option value="ba">5-20 people</option>
+                <option value="sa">20-100 people</option>
+                <option value="qa">> 100 people</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <div class="toggle-switch">
+                <input type="checkbox" id="toggle_1" checked>
+                <label for="toggle_1">Part-time job</label>
+            </div>
+        </div>
+    </div>
+
+    <span style="color: #9a9a9a; margin-top: 12px; padding-right: 6px">Tags:</span>
+    <span class="label label-blue clickable" style="cursor:pointer;">
+        Java <clr-icon shape="times"></clr-icon>
+    </span>
+    <span class="label label-light-blue clickable" style="cursor:pointer;">
+        MANO <clr-icon class="pull-right" shape="times"></clr-icon>
+    </span>
+    <a href="#" class="no-text-decoration" style="color: #007cbb">
+        <clr-icon shape="plus-circle"></clr-icon>
+    </a>
+
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary" style="min-width: 240px">Search</button>
+    <clr-icon shape="refresh"
+              style="width: 36px; height: 36px; cursor: pointer; color: #007cbb; border: solid 1px; padding: 6px"></clr-icon>
+
+</form>
+
+<br>
+
+<hr style="width: 100%; color: #fafafa; background-color:#fafafa; border-top: dotted 1px;"/>
+
+<clr-dropdown class="pull-right">
+    <button type="button" class="btn btn-link" clrDropdownTrigger>
+        Sort by
+        <clr-icon shape="caret down"></clr-icon>
+    </button>
+    <clr-dropdown-menu clrPosition="bottom-right" *clrIfOpen>
+        <button type="button" class="active" clrDropdownItem>Most relevant</button>
+        <button type="button" clrDropdownItem>Most recent</button>
+    </clr-dropdown-menu>
+</clr-dropdown>
+
+<h5 style="padding-bottom: 12px">6 vacancies found</h5>
+
+<div class="row">
+    <div class="col-md-6">
+        <h5><a href="#">Technical Manager</a></h5>
+        <p class="no-margin-top">
+            <a href="#">MANO</a>, Moscow
+        </p>
+
+        <p class="p3 no-margin-top">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu odio nisi.
+            Vestibulum dignissim eget massa sit amet feugiat. Quisque auctor mattis quam eu suscipit.
+            Morbi ipsum risus, feugiat vitae sem at, tincidunt elementum magna.
+            Phasellus tristique posuere dui, ut t...
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h5><a href="#">Software Engineer</a></h5>
+        <p class="no-margin-top">
+            <a href="#">Fluence Labs Ltd</a>, Samara
+        </p>
+
+        <p class="p3 no-margin-top">
+            Fluence is looking for a Software Engineer to join the backend team which is working on
+            the end-to-end encrypted decentralized database.
+            We believe that decentralization of data storage and transmission brings
+            and security people store data, share and control....
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h5><a href="#">Security Engineer</a></h5>
+        <p class="no-margin-top">
+            <a href="#">LATOKEN</a>, Moscow
+        </p>
+
+        <p class="p3 no-margin-top">
+            Security of digital money and assets is a priority for our mission as we are a top target
+            on the internet. We are looking for security professionals who can navigate high intensity
+            challenges to build the core of the new financial system - its security and trust...
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h5><a href="#">Blockchain Developer</a></h5>
+        <p class="no-margin-top">
+            <a href="#">LATOKEN</a>, Toronto
+        </p>
+
+        <p class="p3 no-margin-top">
+            Analyse top blockchain solutions for high frequency decentralized exchanges (including graph
+            chains)
+            Define architecture and development cycles for our blockchain platform capable to absorb fast
+            evolving technologies
+            Design and create layers of replication to blockchain...
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h5><a href="#">Technical Manager</a></h5>
+        <p class="no-margin-top">
+            <a href="#">MANO</a>, Moscow
+        </p>
+
+        <p class="p3 no-margin-top">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu odio nisi.
+            Vestibulum dignissim eget massa sit amet feugiat. Quisque auctor mattis quam eu suscipit.
+            Morbi ipsum risus, feugiat vitae sem at, tincidunt elementum magna.
+            Phasellus tristique posuere dui, ut t...
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h5><a href="#">Software Engineer</a></h5>
+        <p class="no-margin-top">
+            <a href="#">Fluence Labs Ltd</a>, Samara
+        </p>
+
+        <p class="p3 no-margin-top">
+            Fluence is looking for a Software Engineer to join the backend team which is working on
+            the end-to-end encrypted decentralized database.
+            We believe that decentralization of data storage and transmission brings
+            and security people store data, share and control....
+        </p>
+    </div>
+</div>
